@@ -1,0 +1,342 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    background-image: url(https://wallpapercave.com/wp/wp7453739.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 40px;
+    width: auto;
+    margin-left: 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffd700; 
+}
+
+
+.intro {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro .intro-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.intro .intro-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro .intro-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.intro .intro-content .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.intro .intro-content .btn:hover {
+    background-color: #ffd700; 
+}
+
+.intro .intro-image {
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.intro .intro-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    
+}
+.intro .intro-image :hover{
+    transform: translate(20px, 20px) scale(1.2) rotate(20deg);
+}
+
+
+.projects {
+    padding: 80px 0;
+}
+
+.projects .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.projects .project-card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects .project-card :hover{
+    transform:scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+color:aqua;
+background-color: #ffd700;
+}
+
+.projects .project-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.projects .project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+    .visit-button-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .visit-button {
+        display: none;
+    }
+
+    .visit-button + label {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+    }
+
+    .visit-button:checked + label {
+        background-color: #28A745;
+    }
+
+    .visit-button + label::before {
+        content: "Visit";
+    }
+
+    .visit-button:checked + label::before {
+        content: "Visited";
+    }
+
+
+.skills {
+    padding: 80px 0;
+}
+
+.skills .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+ grid-gap: 20px;
+}
+
+.skills .skill-card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills .skill-card:hover{
+    transform:scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: beige;
+    background-color: aquamarine;
+}
+.skills .skill-card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.skills .skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.skills .skill-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+.skills .skill1 {
+    grid-column: 1/span 2;
+    grid-row: span 1;
+    
+}
+
+.skills .skill2 {
+    grid-column: 3; 
+    grid-row: 1 / span 1;
+
+}
+
+.skills .skill3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.skills .skill4 {
+    grid-column: 2; 
+    grid-row: 2;
+}
+
+.skills .skill5 {
+    grid-column: 3;
+    grid-row:2/span 2;
+}
+
+.skills .skill6 {
+    grid-column: 1 / span 2; 
+    grid-row: 3; 
+}
+
+
+.contact {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.pWAz6MVBo5svuJ09ahjN7gHaEK&pid=Api&P=0&h=180);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ffd700; 
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
